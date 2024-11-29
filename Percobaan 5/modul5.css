@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+  }
+  
+  /* Recipes Section */
+  #recipes {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #recipes h2 {
+    margin-bottom: 20px;
+    color: #6bff6e;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .grid-item h3 {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #2600ff;
+    color: white;
+    margin-top: 20px;
+  }
+  
