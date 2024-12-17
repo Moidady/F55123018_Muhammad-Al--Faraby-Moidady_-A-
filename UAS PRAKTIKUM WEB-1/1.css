@@ -1,0 +1,178 @@
+/* Menata body dengan latar belakang gradasi yang lembut */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #b0e0e6, #e6f5e9);
+}
+
+/* Menata header dengan desain lebih modern */
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+header nav a {
+    margin: 0 1.5rem;
+    text-decoration: none;
+    color: #7aff65;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Bagian Hero dengan overlay yang menarik */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('path-to-your-image.jpg');  
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
+}
+
+.hero p {
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Menambahkan animasi turbin angin dengan elemen lebih modern */
+.animation {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 2rem auto;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 4s linear infinite;
+}
+
+.blade {
+    width: 12px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+.blade1 {
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.blade2 {
+    transform: translateX(-50%) rotate(120deg);
+}
+
+.blade3 {
+    transform: translateX(-50%) rotate(240deg);
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Menata galeri gambar dengan grid untuk responsivitas */
+.image-gallery {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.image-gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Menata tampilan gambar dengan efek hover menarik */
+.image-item {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Menambahkan responsivitas pada gambar */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+    }
+}
